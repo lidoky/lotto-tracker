@@ -30,6 +30,25 @@ tr:last-child td{border-bottom:none}
 footer{margin-top:26px;font-size:12px;color:var(--sub);background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px}
 footer b{color:var(--ink)}
 .upd{text-align:right;font-size:11px;color:var(--sub);margin-top:10px}
+h2{font-size:18px;font-weight:800;margin:30px 0 6px;letter-spacing:-.3px}
+.sec-desc{color:var(--sub);font-size:13px;margin-bottom:12px;max-width:640px}
+.section{background:#0f1c2e;color:#eaf0f8;border-radius:16px;padding:20px 22px;margin-top:26px}
+.section h2{color:#fff;margin-top:0}
+.section .sec-desc{color:#a8b6cc}
+.section table{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);margin-top:12px}
+.section th{background:rgba(255,255,255,.06);color:#8ea0bb}
+.section td{border-bottom-color:rgba(255,255,255,.08)}
+.section .tgt{color:#eaf0f8}
+.section .ball{background:rgba(255,255,255,.12);color:#cdd8ea}
+.section .ball.hit{background:var(--gold);color:#fff}
+.btbig{font-size:19px;margin:6px 0 10px;color:#fff}
+.btbig b{color:#ffd34d;font-size:24px}
+.btsub{color:#a8b6cc;font-size:14px}
+.btdist{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.btdist span{background:rgba(255,255,255,.08);border-radius:7px;padding:4px 11px;font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums}
+.btdist .mut{color:#8ea0bb}
+.sec-note{color:#a8b6cc;font-size:12px;margin-top:12px;line-height:1.55}
+.sec-note b{color:#ffd34d}
 @media(max-width:640px){.recs{min-width:0}.ball{width:23px;height:23px;font-size:11.5px}}
 </style></head><body><div class="wrap">
 <header>
@@ -42,6 +61,20 @@ footer b{color:var(--ink)}
 <div class="stat"><div class="n">1</div><div class="l">5등이상 적중</div></div>
 <div class="stat"><div class="n">5등</div><div class="l">최고 등수</div></div>
 </div>
+
+<div class="section">
+<h2>📉 역대 전체 백테스트</h2>
+<p class="sec-desc">1회차부터 <b>1~1232회 전체</b>에 조합기를 돌려(회차당 3개 = 3,696장) 실제 당첨과 대조했습니다. "정말 안 되는지"를 데이터로 확인.</p>
+<div class="btbig">역대 최고 등수 &nbsp;<b>3등</b> <span class="btsub">(5개 일치)</span></div>
+<div class="btdist">
+<span>1등 0</span><span>2등 0</span><span>3등 1</span><span>4등 7</span><span>5등 84</span><span class="mut">꽝 3,604</span>
+</div>
+<table><thead><tr><th>회차</th><th>등수</th><th>추천조합(당첨과 일치=금색)</th></tr></thead><tbody>
+<tr><td class="tgt">960회</td><td><span class="tier" style="background:#d48806">3등 · 5개</span></td><td class="recs"><span class="ball hit">2</span><span class="ball hit">24</span><span class="ball hit">30</span><span class="ball hit">32</span><span class="ball">39</span><span class="ball hit">45</span></td></tr><tr><td class="tgt">59회</td><td><span class="tier" style="background:#389e0d">4등 · 4개</span></td><td class="recs"><span class="ball hit">6</span><span class="ball">9</span><span class="ball">35</span><span class="ball hit">39</span><span class="ball hit">41</span><span class="ball hit">45</span></td></tr><tr><td class="tgt">70회</td><td><span class="tier" style="background:#389e0d">4등 · 4개</span></td><td class="recs"><span class="ball hit">5</span><span class="ball hit">19</span><span class="ball hit">22</span><span class="ball">40</span><span class="ball hit">43</span><span class="ball">45</span></td></tr><tr><td class="tgt">441회</td><td><span class="tier" style="background:#389e0d">4등 · 4개</span></td><td class="recs"><span class="ball hit">1</span><span class="ball hit">23</span><span class="ball hit">28</span><span class="ball hit">34</span><span class="ball">43</span><span class="ball">45</span></td></tr><tr><td class="tgt">462회</td><td><span class="tier" style="background:#389e0d">4등 · 4개</span></td><td class="recs"><span class="ball hit">3</span><span class="ball">16</span><span class="ball hit">32</span><span class="ball hit">37</span><span class="ball">41</span><span class="ball hit">45</span></td></tr><tr><td class="tgt">471회</td><td><span class="tier" style="background:#389e0d">4등 · 4개</span></td><td class="recs"><span class="ball">1</span><span class="ball hit">6</span><span class="ball hit">37</span><span class="ball hit">39</span><span class="ball hit">41</span><span class="ball">44</span></td></tr><tr><td class="tgt">1106회</td><td><span class="tier" style="background:#389e0d">4등 · 4개</span></td><td class="recs"><span class="ball hit">1</span><span class="ball hit">4</span><span class="ball">34</span><span class="ball">37</span><span class="ball hit">42</span><span class="ball hit">45</span></td></tr><tr><td class="tgt">1153회</td><td><span class="tier" style="background:#389e0d">4등 · 4개</span></td><td class="recs"><span class="ball hit">1</span><span class="ball hit">13</span><span class="ball hit">35</span><span class="ball">39</span><span class="ball">41</span><span class="ball hit">44</span></td></tr>
+</tbody></table>
+<p class="sec-note">랜덤 기준선: 같은 3,696장이면 5등 기대 약 82.9장. 추천의 적중은 랜덤과 통계적으로 동일 — <b>당첨 확률은 전혀 안 올라갑니다.</b> 이 백테스트의 목적은 그 사실을 정직하게 보여주는 것.</p>
+</div>
+<h2>🗓️ 회차별 추천 기록</h2>
 <table>
 <thead><tr><th>회차</th><th>당첨번호</th><th>추천 3개 · 결과</th></tr></thead>
 <tbody>
