@@ -1,0 +1,17 @@
+[
+ {
+  "event": "prediction",
+  "target": 1233,
+  "generated_at_utc": "2026-07-14T01:06:04+09:00",
+  "data_through": 1232,
+  "algorithm_version": "legacy-pre-v2",
+  "input_digest": "3d62e927ac822b5bd6bb87d3c2170e3f091a0660fdd55e372716725b1b5906c4",
+  "source_revision": "unknown-legacy",
+  "event_hash": "9fc6cb52663f17817b993a63b9fae2b126bb3dd3d1f87c89988cbc080a4cae0c",
+  "strategies": [
+   "coverage4",
+   "lowcrowd4",
+   "myeongin12"
+  ]
+ }
+]
