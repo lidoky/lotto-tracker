@@ -2,14 +2,41 @@
  {
   "event": "prediction",
   "target": 1233,
-  "generated_at_utc": "2026-07-14T01:06:04+09:00",
+  "generated_at_utc": "2026-07-16T00:00:00+00:00",
   "data_through": 1232,
-  "algorithm_version": "legacy-pre-v2",
-  "input_digest": "3d62e927ac822b5bd6bb87d3c2170e3f091a0660fdd55e372716725b1b5906c4",
-  "source_revision": "unknown-legacy",
-  "event_hash": "9fc6cb52663f17817b993a63b9fae2b126bb3dd3d1f87c89988cbc080a4cae0c",
+  "algorithm_version": "test",
+  "event_hash": "4a92ce8d75f275f7dbf98dcaecd188e146b4cf3f84179e67ee3763537d1d9ad1",
   "strategies": [
    "coverage4",
+   "lowcrowd4",
+   "myeongin12"
+  ]
+ },
+ {
+  "event": "result",
+  "target": 1233,
+  "generated_at_utc": "2026-07-16T16:54:50.566963+00:00",
+  "data_through": 1233,
+  "algorithm_version": "test",
+  "prediction_hash": "4a92ce8d75f275f7dbf98dcaecd188e146b4cf3f84179e67ee3763537d1d9ad1",
+  "event_hash": "e334450ac48a0df0bcb5fd88753f2af6e9c95db2210f07a4915a4ce84cd06509"
+ },
+ {
+  "event": "prediction",
+  "target": 1234,
+  "generated_at_utc": "2026-07-16T16:54:50.638749+00:00",
+  "data_through": 1233,
+  "algorithm_version": "2026-07-16-v4",
+  "input_digest": "4592be7c5191ac25460dab892b589d046494e07dc055980131da8ba5db00bd33",
+  "source_revision": "821d26d92a3c8f04895ef7c37b3e572531bf3cf2",
+  "source_digest": "a465ad3bffca21804d862a1293871a588e2106e9d402c049b35dd984390dbae0",
+  "runtime": {
+   "python": "3.9.6"
+  },
+  "event_hash": "d64a0013ac636a2c37ada699722ff95456301785696d5006c386e87d21ca9ee2",
+  "strategies": [
+   "coverage4",
+   "hybrid12",
    "lowcrowd4",
    "myeongin12"
   ]
